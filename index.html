@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h2>Random number:</h2>
+<button onclick="fun()">Click to Enter the  Value:</button>
+<p id="demo"></p>
+<script>
+function fun(){
+    let a=Math.floor(Math.random() * 10) + 1;
+    var tab = Number(prompt("YOUR GUESS:","0"));;
+    if(tab === a){        
+document.getElementById("demo").innerHTML ="GREAT WORK";
+    }
+    else{
+document.getElementById("demo").innerHTML ="NUMBER NOT MATCHED";
+    }
+}
+</script>
+</body>
+</html>
+
